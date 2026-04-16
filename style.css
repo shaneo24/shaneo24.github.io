@@ -996,6 +996,24 @@ footer {
         justify-content: center;
     }
 
+	.hero-content {
+		padding-top: 60px;
+	}
+	
+	.profile-wrapper, .account-wrapper {
+		padding-top: 200px;
+	}
+	
+	.filters-container {
+		flex-direction: column;
+		gap: 30px;
+	}
+	
+	.filters-container.open {
+		max-height: 1500px;
+		padding: 30px;
+	}
+	
     /* 2. Center the Horse Cards (Without resizing them) */
     .listings {
         justify-content: center; /* Ensures the cards stay perfectly in the middle */
