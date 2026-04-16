@@ -723,8 +723,19 @@ footer {
 /* Make it stack cleanly on smaller screens */
 @media (max-width: 900px) {
     .profile-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
+        display: flex; 
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    /* This forces the text to the top on mobile */
+    .profile-details {
+        order: 1; 
+    }
+    
+    /* This pushes the image and documents below the text */
+    .profile-image-container {
+        order: 2; 
     }
 }
 
