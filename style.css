@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
     /* Using the new sleek font */
     font-family: 'Montserrat', sans-serif;
@@ -973,6 +977,10 @@ footer {
 /* --- Mobile Layout Fixes --- */
 @media (max-width: 850px) {
     
+	html {
+		scroll-padding-top: 240px;
+	}
+	
     /* 1. Fix the Header & Navbar */
     header {
         flex-direction: column; 
@@ -997,7 +1005,7 @@ footer {
     }
 
 	.hero-content {
-		padding-top: 60px;
+		padding-top: 120px;
 	}
 	
 	.profile-wrapper, .account-wrapper {
