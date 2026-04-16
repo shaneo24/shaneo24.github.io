@@ -978,7 +978,7 @@ footer {
 @media (max-width: 850px) {
     
 	html {
-		scroll-padding-top: 240px;
+		scroll-padding-top: 180px;
 	}
 	
     /* 1. Fix the Header & Navbar */
