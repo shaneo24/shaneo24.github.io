@@ -969,3 +969,36 @@ footer {
     font-style: italic;
     line-height: 1.4;
 }
+
+/* --- Mobile Layout Fixes --- */
+@media (max-width: 850px) {
+    
+    /* 1. Fix the Header & Navbar */
+    header {
+        flex-direction: column; 
+        padding: 20px;
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap; 
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .auth-status {
+        margin-left: 0;
+        padding-left: 0;
+        border-left: none; 
+        border-top: 1px solid #eee; 
+        padding-top: 15px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* 2. Center the Horse Cards (Without resizing them) */
+    .listings {
+        justify-content: center; /* Ensures the cards stay perfectly in the middle */
+        padding: 40px 10px; /* Shrinks the side padding so it stops pushing the cards right */
+    }
+}
