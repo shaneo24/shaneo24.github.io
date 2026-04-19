@@ -1004,9 +1004,16 @@ footer {
         justify-content: center;
     }
 
-	.hero-content, .profile-wrapper, .account-wrapper {
-		padding-top: 180px;
-	}
+	.hero-content {
+        padding-top: 180px;
+    }
+
+    .profile-wrapper, .account-wrapper {
+        padding-top: 180px;
+        padding-left: 15px; /* Expands the content to match the index cards */
+        padding-right: 15px;
+        padding-bottom: 40px; /* Tightens up the bottom spacing a bit on mobile too */
+    }
 	
 	.filters-container {
 		flex-direction: column;
